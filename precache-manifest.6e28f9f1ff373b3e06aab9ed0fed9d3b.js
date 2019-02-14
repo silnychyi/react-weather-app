@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/react-weather-app/static/js/runtime~main.72a6b7ef.js"
   },
   {
-    "revision": "03a00f825857254bbcde",
-    "url": "/react-weather-app/static/js/main.03a00f82.chunk.js"
+    "revision": "0e8066dac541839da353",
+    "url": "/react-weather-app/static/js/main.0e8066da.chunk.js"
   },
   {
     "revision": "4a34e45d34cafb7623bd",
     "url": "/react-weather-app/static/js/1.4a34e45d.chunk.js"
   },
   {
-    "revision": "03a00f825857254bbcde",
-    "url": "/react-weather-app/static/css/main.77b2fc81.chunk.css"
+    "revision": "0e8066dac541839da353",
+    "url": "/react-weather-app/static/css/main.a78ba865.chunk.css"
   },
   {
-    "revision": "636de6deb020cd209ba5af86fc057fc7",
+    "revision": "831c218334333c4e8eb636c6b1c82467",
     "url": "/react-weather-app/index.html"
   }
 ];
