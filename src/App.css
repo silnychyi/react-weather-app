@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background: url(./images/bg1.jpg) no-repeat center/cover;
+  overflow: hidden;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  transition: 1s;
+}
+
+.bg-rain {
+  background: url(./images/bg1_rain.jpg) no-repeat center/cover;
+}
+.bg-sun {
+  background: url(./images/bg1_sun.jpg) no-repeat center/cover;
+}
+
+form {
+  padding: 0 10px;
+  position: relative;
+  width: 100vw;
+  max-width: 450px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.input {
+  width: 100%;
+  background-color: #fff;
+  font-size: 25px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: #111;
+  box-shadow: 0px 2px 3px #0000007e;
+  -webkit-appearance: none;
+  transition: 200ms;
+}
+
+.input:focus {
+  box-shadow: 0px 4px 6px #0000006c;
+  width: calc(100% - 65px);
+  margin-right: 20px;
+}
+
+form .input:focus + button{
+  opacity: 1;
+  z-index: 1;
+}
+
+form button{
+  right: 10px;
+  top: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  border: none;
+  background-color: transparent;
+  min-width: 50px;
+  height: 100%;
+  outline: none;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #00000078;
+  transition: 200ms;
+}
+
+.input::placeholder {
+  color: #00000052;
+  text-align: center;
+}
+
+
+.result {
+  margin: 25px 0 0;
+  min-height: 50px;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.data {
+  padding: 3px 25px;
+  font-size: 20px;
+  margin: 0 10px;
+  min-height: 40px;
+  background-color: #ffffffb0;
+  border-radius: 10px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  text-align: center;
+}
+
+.data img {
+  height: 34px;
+  margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 425px){
+
+  .result {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    min-height: 200px;
+  }
+  .result .data {
+    margin: 5px 0;
+  }
+
+  .data {
+    width: 200px;
+  }
+  
+}
